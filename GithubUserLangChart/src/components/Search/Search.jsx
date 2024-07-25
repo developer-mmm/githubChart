@@ -15,7 +15,7 @@ function Search({ setData, setIsLoading }) {
     handleClick();
   }, []);
   return (
-    <div className="flex bg-dark-gray p-3 gap-5 rounded-md shadow-lg ">
+    <div className="flex bg-dark-gray p-3 gap-5 rounded-2xl  shadow-lg ">
       <div className="flex items-center gap-3">
         <span>
           {" "}
@@ -40,7 +40,7 @@ function Search({ setData, setIsLoading }) {
       <div>
         <button
           onClick={handleClick}
-          className="bg-dark-blue rounded-lg px-3 py-2 text-white shadow-md "
+          className="bg-dark-blue ml-52 rounded-lg px-3 py-2 text-white shadow-md "
         >
           Search
         </button>

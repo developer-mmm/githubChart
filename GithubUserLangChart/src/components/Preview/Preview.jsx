@@ -16,23 +16,23 @@ function Preview({
   joinedAt,
 }) {
   return (
-    <div className="bg-dark-gray p-5 flex text-white justify-center rounded-md ">
+    <div className="bg-dark-gray p-5 flex pr-14 pl-14 text-white justify-center rounded-2xl ">
       {!isLoading ? (
         <div className="flex flex-col gap-4">
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-10 items-start ">
             <div>
-              <img className="w-28 rounded-full" src={avatarUrl} alt="image" />
+              <img className="w-28  rounded-full" src={avatarUrl} alt="image" />
             </div>
             <div>
               <h1>{name}</h1>
               <h3 className="text-dark-blue">{login}</h3>
-              <p>Joined at {joinedAt}</p>
             </div>
+            <p>Joined at {joinedAt}</p>
           </div>
           <div>
             <p className="max-w-xs">{bio}</p>
           </div>
-          <div className="flex  bg-dark-bg p-3 gap-10 rounded-md ">
+          <div className="flex mr-10 ml-16 bg-dark-bg p-3 gap-10 rounded-2xl ">
             <div>
               <h3>Repos</h3>
               <span>{public_repos}</span>
@@ -62,7 +62,7 @@ function Preview({
                 </span>
                 <span>{location ? location : "Not Found"}</span>
               </div>
-              <div className="flex gap-5 items-center">
+              <div className="flex gap-5 items-center ">
                 <span>
                   {" "}
                   <svg
@@ -81,7 +81,7 @@ function Preview({
                 <span>{twitter ? twitter : "Not Found"}</span>
               </div>
             </div>
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly gap-2 ">
               <div className="flex gap-5 items-center ">
                 <span>
                   <svg
